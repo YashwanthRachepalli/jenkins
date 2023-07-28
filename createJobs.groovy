@@ -1,8 +1,14 @@
-pipelineJob('pipelineJob') {
+pipelineJob('ems-job') {
     definition {
-        cps {
-            script(readFileFromWorkspace('pipelineJob.groovy'))
-            sandbox()
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/YashwanthRachepalli/entity-management-service.git'
+                    }
+                    branch 'main'
+                }
+            }
         }
     }
 }
