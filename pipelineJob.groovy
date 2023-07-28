@@ -1,4 +1,4 @@
-pipelineJob('entity-management-service-') {
+pipelineJob('entity-management-service') {
     definition {
         cpsScm {
             scm {
