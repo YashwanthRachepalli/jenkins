@@ -1,4 +1,4 @@
-pipelineJob('pipelineJob') {
+pipeline('pipelineJob') {
     definition {
         cps {
             script(readFileFromWorkspace('pipelineJob.groovy'))
